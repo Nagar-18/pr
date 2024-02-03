@@ -9,6 +9,7 @@ import { auth } from "./firebase2";
 
 import "./App.css";
 import Table from "./components/Home/Table";
+import Weather from "./components/Home/Weather";
 
 function App() {
   const [userName, setUserName] = useState("");
@@ -28,6 +29,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/table" element={<Table/>} />
+           <Route path="/weather" element={<Weather/>} />
           <Route path="/" element={<Home name={userName} />} />
         </Routes>
       </Router>

@@ -55,7 +55,7 @@ function Signup() {
         await updateProfile(user, {
           displayName: values.name,
          });
-    navigate("/");
+    navigate("/weather");
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);
