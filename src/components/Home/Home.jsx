@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Weather from "./Weather";
+import Login from "../Login/Login";
 
 function Home(props) {
   return (
     <div>
       <div>
         <h1>
-         {props.name ?(<></>):<Link to="/login">Login</Link> } 
+         {props.name ?(<></>):<Login/> } 
         </h1>
         <br />
         <h1>
-         {props.name ?(<></>):<Link to="/Signup">Signup</Link> } 
+         
         </h1>
       </div>
 
